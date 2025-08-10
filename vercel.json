@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 30
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/ip-checker-sample/",
+      "schedule": "0 */6 * * *"
+    }
+  ],
+  "env": {
+    "IP2LOCATION_API_KEY": "66EFBEC8F666B07635A845CF70521B80"
+  }
+}
