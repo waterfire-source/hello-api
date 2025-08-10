@@ -1,24 +1,24 @@
 {
   "version": 2,
   "functions": {
-    "api/index.js": {
-      "maxDuration": 30
-    }
-  },
-  "crons": [
-    {
-      "path": "/api/ip-checker-sample/",
-      "schedule": "0 0 * * *"
-    }
-  ],
-  "env": {
-    "IP2LOCATION_API_KEY": "66EFBEC8F666B07635A845CF70521B80"
-  },
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "outputDirectory": "dist"
+    "api/*": {
+      "runtime": "nodejs16.x"
+    },
+    "crons": [
+      {
+        "path": "/api/ip-checker-sample/",
+        "schedule": "0 0 * * *"
+      }
+    ],
+    "env": {
+      "IP2LOCATION_API_KEY": "66EFBEC8F666B07635A845CF70521B80"
+    },
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "outputDirectory": "dist"
+  }
 }
