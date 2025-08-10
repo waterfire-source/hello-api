@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "api/*": {
-      "runtime": "nodejs@18"
+      "runtime": "nodejs@16"
     }
   },
   "crons": [
