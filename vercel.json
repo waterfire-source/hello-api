@@ -13,6 +13,5 @@
   ],
   "env": {
     "IP2LOCATION_API_KEY": "66EFBEC8F666B07635A845CF70521B80"
-  },
-  "buildCommand": "npm install"
+  }
 }
